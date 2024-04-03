@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px 20px;
+            grid-template-rows: repeat(3, 1fr);
+
+
+        }
+
+        .child {
+            height: 520px;
+            width: 370px;
+            border-radius: 12px;
+            border-top: 10px solid #e5e7eb;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        }
+
+        #parent>.child>img {
+            width: 370px;
+            height: 380px;
+
+        }
+
+        #parent>.child>h2 {
+            display: flex;
+            justify-content: center;
+            margin: 5px;
+
+        }
+
+        #parent>.child>p {
+            display: flex;
+            justify-content: center;
+            margin: 5px;
+            font-size: 20px;
+            color: #544d4f;
+        }
+
+        #parent>.child>.logo>img {
+            height: 35px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            padding-left: 35%;
+            padding-top: 3%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div class="child">
+            <img src="./images/Inv-1.png" alt="">
+            <h2>Vijay Shekhar Sharma</h2>
+            <p>Founder & CEO</p>
+            <div class="logo">
+                <img src="./images/paytm-icon.png" alt="">
+            </div>
+        </div>
+        <div class="child">
+            <img src="./images/Inv-2.png" alt="">
+            <h2>Kunal Shah</h2>
+            <p>Founder</p>
+            <div class="logo">
+                <img src="./images/CRED-LOGO.png" alt="">
+            </div>
+        </div>
+        <div class="child">
+            <img src="./images/Inv-3.png" alt="">
+            <h2>Amrish Rau</h2>
+            <p>CEO</p>
+            <div class="logo">
+                <img src="./images/Pine Labs logo.png" alt="">
+            </div>
+        </div>
+        <div class="child">
+            <img src="./images/Inv-4.png" alt="">
+            <h2>Sampad Swain</h2>
+            <p>Co-Founder & CEO</p>
+            <div class="logo">
+                <img src="./images/instamojo logo.png" alt="">
+            </div>
+        </div>
+        <div class="child">
+            <img src="./images/Inv-5.png" alt="">
+            <h2>Ankush Sachdeva</h2>
+            <p>Co-Founder & CEO</p>
+            <div class="logo">
+                <img src="./images/share-chat logo.png" alt="">
+            </div>
+        </div>
+        <div class="child">
+            <img src="./images/Inv-6.png" alt="">
+            <h2>Bhanu Pratap Singh</h2>
+            <p>Co-Founder & CTO</p>
+            <div class="logo">
+                <img src="./images/share-chat logo.png" alt="">
+            </div>
+        </div>
+        <div class="child">
+            <img src="./images/Inv-7.png" alt="">
+            <h2>Farid Ahsan</h2>
+            <p>Co-Founder & COO</p>
+            <div class="logo">
+                <img src="./images/share-chat logo.png" alt="">
+            </div>
+        </div>
+        <div class="child">
+            <img src="./images/Inv-8.png" alt="">
+            <h2>Amit Kumar Agarwal</h2>
+            <p>Founder & CEO</p>
+            <div class="logo">
+                <img src="./images/NoBroker logo.png" alt="">
+            </div>
+        </div>
+        <div class="child">
+            <img src="./images/Inv-9.png" alt="">
+            <h2>Akhil Gupta</h2>
+            <p>Founder & CTO</p>
+            <div class="logo">
+                <img src="./images/NoBroker logo.png" alt="">
+            </div>
+        </div>
+        <div class="child">
+            <img src="./images/Inv-10.png" alt="">
+            <h2>Saurabh Garg</h2>
+            <p>Co-Founder & CBO</p>
+            <div class="logo">
+                <img src="./images/NoBroker logo.png" alt="">
+            </div>
+        </div>
+        <div class="child">
+            <img src="./images/Inv-11.png" alt="">
+            <h2>Vipin Pathak</h2>
+            <p>Co-Founder & CEO</p>
+            <div class="logo">
+                <img src="./images/care24-logo.png" alt="">
+            </div>
+        </div>
+        <div class="child">
+            <img src="./images/Inv-12.png" alt="">
+            <h2>Ramakant Sharma</h2>
+            <p>Founder</p>
+            <div class="logo">
+                <img src="./images/LivSpace logo.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

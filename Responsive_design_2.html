@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: auto;
+        }
+
+        #main {
+            display: grid;
+            grid-template-areas: "logo shop sell about shop2"
+                "logo shop sell about shop2"
+                "footer footer footer footer footer";
+            padding: 1px;
+            width: 100%;
+        }
+
+        #main>div {
+            padding: 30px;
+            background-color: #ddd;
+            color: #ffffff;
+            text-align: center;
+            font-weight: 600;
+            width: 100%;
+        }
+
+        #main>div>p {
+            font-weight: 100;
+        }
+
+        #main>.logo {
+            grid-area: logo;
+            background-color: #02026f;
+        }
+
+        #main>.logo img {
+            padding: 2px 30px 20px 40px;
+        }
+
+        #main>.shop {
+            grid-area: shop;
+            background-color: #3140af;
+        }
+
+        #main>.sell {
+            grid-area: sell;
+            background-color: #3140af;
+        }
+
+        #main>.about {
+            grid-area: about;
+            background-color: #3140af;
+        }
+
+        #main>.shop2 {
+            grid-area: shop2;
+            background-color: #3140af;
+        }
+
+        #main>.footer {
+            border-top: 1px solid white;
+            grid-area: footer;
+            background-color: #222222;
+            display: flex;
+            align-items: center;
+        }
+
+        #main>.footer p {
+            margin-left: 40%;
+            display: flex;
+            gap: 10px;
+        }
+
+        #main>.footer button {
+            color: white;
+            background-color: transparent;
+            border: none;
+        }
+
+        #main>.footer a {
+            color: white;
+        }
+
+        @media screen and (min-width: 768px) and (max-width:1080px) {
+            #main {
+                grid-template-areas:
+                "footer footer footer footer"
+                    "shop sell about shop2"
+                    "shop sell about shop2"
+                    "shop sell about shop2"
+                    "logo logo logo logo";
+            }
+
+            #main>.footer p {
+                display: fixed;
+                margin-left: 10%;
+                margin-right: 10%;
+                gap: 10px;
+            }
+
+            #main>.footer img {
+                margin-left: -40%;
+            }
+
+            #main>.logo img {
+                height: 200px;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+
+            #main{
+                grid-template-areas: 
+                "footer"
+                "shop"
+                "sell"
+                "about"
+                "shop2"
+                "logo";
+            }
+            #main > .footer p{
+                margin-left: 10%;
+                margin-right: 10%;
+                gap: 15px;
+            }
+            #main > .footer img{
+                margin-left:-40%;
+            }
+            #main > .logo img{
+                height: 200px;
+            }
+            #main > .shop{
+                display: grid;
+                justify-content: left;
+            }
+            #main > .sell{
+                display: grid;
+                justify-content: left;
+            }
+            #main > .about{
+                display: grid;
+                justify-content: left;
+                padding-left: 50px;
+            }
+            #main > .shop2{
+                display: grid;
+                justify-content: left;
+            }
+            #main{
+                gap: 10px;
+            }
+           
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+        <div class="logo"><img src="./rd_2_logo.png" alt=""></div>
+        <div class="shop">Shop
+            <p>Gift card</p>
+            <p>Etsy <span>Registry</span></p>
+            <p>Sitemap</p>
+            <p>Etsy blog</p>
+            <p>Etsy United Kingdom</p>
+            <p>Etsy Germany</p>
+            <p>Etsy Canada</p>
+        </div>
+        <div class="sell">Sell
+            <p>Sell on Etsy</p>
+            <p>Teams</p>
+            <p>Forums</p>
+            <p>Affiliates & Creators</p>
+        </div>
+        <div class="about">About
+            <p>Etsy, Inc.</p>
+            <p>Policies</p>
+            <p>Investors</p>
+            <p>Careers</p>
+            <p>Press</p>
+            <p>Impact</p>
+            <p>Legal imprint</p>
+        </div>
+        <div class="shop2">Shop2
+            <p>Gift card</p>
+            <p>Etsy Registry</p>
+            <p>Sitemap</p>
+            <p>Etsy blog</p>
+            <p>Etsy United Kingdom</p>
+            <p>Etsy Germany</p>
+            <p>Etsy Canada</p>
+        </div>
+        <div class="footer">
+            <img src="./india_round_icon_64.png" alt="">
+            India | English (IN) | ₹(INR)
+            <p>© 2024 Etsy, Inc. <button><a href="#">Terms of Use</a></button> <button><a href="#">Privacy</a></button>
+                <button><a href="#">Interest-based ads</a></button>
+                <button><a href="#">Local Shops</a></button> <button><a href="#">Regions</a></button>
+            </p>
+        </div>
+    </div>
+    <footer></footer>
+</body>
+
+</html>
